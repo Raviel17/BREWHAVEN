@@ -2,7 +2,7 @@
 
 A modern, responsive website for BREWHAVEN Coffee Shop built with HTML, Tailwind CSS, and JavaScript.
 
-![BREWHAVEN Preview](image/preview.png)
+![BREWHAVEN Preview](preview.png)
 
 ## 🚀 Features
 
