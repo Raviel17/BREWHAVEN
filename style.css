@@ -1,0 +1,159 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFFBE9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #AD8B73;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #CEAB93;
+}
+
+/* Coffee-themed custom styles */
+.service-card {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.parallax {
+    transition: transform 0.5s ease-out;
+}
+
+/* Custom animation for coffee steam */
+@keyframes steam {
+    0%, 100% {
+        transform: translateY(0) translateX(-50%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px) translateX(-30%);
+    }
+}
+
+.steam {
+    position: relative;
+}
+
+.steam::before {
+    content: "~";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    color: #AD8B73;
+    animation: steam 2s infinite;
+    font-size: 20px;
+}
+
+/* Additional custom styles can be added here */
+
+/* Menu item hover effect */
+.menu-item {
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateX(10px);
+}
+
+/* Gallery image hover effect */
+.gallery-image {
+    transition: all 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* Opening hours table styles */
+.hours-table tr {
+    border-bottom: 1px solid #E3CAA5;
+}
+
+.hours-table td {
+    padding: 0.5rem 0;
+}
+
+/* Promo card hover effect */
+.promo-card {
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Map container styles */
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Gallery Carousel styles */
+.gallery-carousel {
+    position: relative;
+    padding: 0 20px;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    cursor: grab;
+}
+
+.gallery-track:active {
+    cursor: grabbing;
+}
+
+.gallery-item {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hide scrollbar but keep functionality */
+.gallery-carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Optimasi transisi dengan hardware acceleration */
+.transform-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Kurangi penggunaan shadow */
+.shadow-optimized {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
