@@ -78,4 +78,4 @@ For business inquiries:
 - Fonts from Google Fonts
 
 ---
-Made with ☕ by Raviel
+Made with ☕ by Raviel :)
